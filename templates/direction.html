@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block main %}
+
+    <h1 class="display-5 mt-4">Летим из <span data-test="from">{{ departure }}</span></h1>
+      <p class="mb-4"><span class="font-weight-bold">Найдено </span><span data-test="tourcount" class="font-weight-bold">{{ tours|length }}</span>
+      {% if tours|length == 0 %} <span class="font-weight-bold">туров </span></p>
+      {% elif tours|length not in [2, 3, 4] %} 
+      <span class="font-weight-bold">туров</span>, от <span data-test="pricemin">{{ pricemin }}</span> до <span data-test="pricemax">{{ pricemax }}</span> и от <span data-test="nightsmin">{{ nightsmin }}</span> ночей до <span data-test="nightsmax">{{ nightsmax }}</span> ночей</p>
+      {% elif tours|length == 1 %}
+      <span class="font-weight-bold">тур</span>, <span data-test="pricemin">{{ pricemin }}</span> P, <span data-test="nightsmin">{{ nightsmin }} ночей</span></p>
+      {% else %}
+      <span class="font-weight-bold">тура</span>, от <span data-test="pricemin">{{ pricemin }}</span> до <span data-test="pricemax">{{ pricemax }}</span> и от <span data-test="nightsmin">{{ nightsmin }}</span> ночей до <span data-test="nightsmax">{{ nightsmax }}</span> ночей</p>
+      {% endif %}
+    <!-- HERO -->
+    
+    <!-- CARDS -->
+
+      <div class="row mt-5" data-test="cards">
+        {% for id in tours %}
+          <div class="col-4" data-test="card">
+              <div class="card mb-3" >
+              <img src="{{ tours[id].picture }}" class="card-img-top img-fluid" data-test="picture" style="height: 200px;">
+              <div class="card-body">
+                <h5 class="card-title">{{ tours[id].country }}: {{ tours[id].title }}</h5>
+              <p class="card-text">{{ tours[id].description |truncate(100, end='') }}</p>
+              <p class="card-text font-weight-bold">{{ tours[id].date }}, {{ tours[id].nights }} дней, {{ tours[id].price }} P
+                <span style="float: right;">{{ tours[id].stars }} ★</span>
+              </p>               
+              </div>
+          </div>
+          </div>
+        {% endfor %}
+    </div>    
+
+{% endblock %}
