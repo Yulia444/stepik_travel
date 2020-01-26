@@ -14,7 +14,8 @@ def server_error(e):
 @app.route('/')
 def main():
     keys=sorted(data.tours, key=lambda x: (data.tours[x]['price']))[:6]
-    return render_template("index.html", tours = data.tours, departures=data.departures, keys=keys)
+    return render_template("index.html", tours = data.tours, departures=data.departures,
+     keys=keys)
 
 @app.route('/from/<direction>')
 def direction(direction):
