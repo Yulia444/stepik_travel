@@ -13,7 +13,8 @@ def server_error(e):
 
 @app.route('/')
 def main():
-    return render_template("index.html", tours = data.tours, departures=data.departures)
+    keys=sorted(data.tours, key=lambda x: (data.tours[x]['price']))[:6]
+    return render_template("index.html", tours = data.tours, departures=data.departures, keys=keys)
 
 @app.route('/from/<direction>')
 def direction(direction):
@@ -30,7 +31,6 @@ def direction(direction):
     for tour in data.tours:
         if data.tours[tour]["departure"] == direction:
             tours[tour] = data.tours[tour]
-
     return render_template("direction.html", departure = data.departures[direction], 
     tours = tours, pricemin = pricemin, pricemax = pricemax, nightsmin = nightsmin, 
     nightsmax = nightsmax, departures=data.departures)
