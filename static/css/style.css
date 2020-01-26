@@ -3,4 +3,10 @@
     background-size: cover;
     
 }
+.card-img-top{
+    opacity: 0.7;
+}
 
+.card-img-top:hover{
+    opacity: 1.0;
+}
