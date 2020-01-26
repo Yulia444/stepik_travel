@@ -20,7 +20,7 @@
              <p class="card-text">{{ tours[id].description | truncate(100, end='') }}</p>
                 <!--<a href="" class="btn btn-sm btn-primary" data-test="tourlink">Подробнее</a>-->
                 <p class="card-text font-weight-bold">{{ tours[id].date }}, {{ tours[id].nights }} дней, {{ tours[id].price }} P
-                  <span style="float: right;">{{ tours[id].stars }} ★</span>
+                  <span class="stars">{{ tours[id].stars }} ★</span>
                 </p>
             </div>
         </div>
