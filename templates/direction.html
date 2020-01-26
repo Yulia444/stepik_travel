@@ -19,7 +19,7 @@
         {% for id in tours %}
           <div class="col-4" data-test="card">
               <div class="card mb-3" >
-              <a href="/tours/{{ id }}"><img src="{{ tours[id].picture }}" class="card-img-top img-fluid" data-test="picture" style="height: 200px;"></a>
+              <a href="/tours/{{ id }}"><img src="{{ tours[id].picture }}" class="card-img-top img-fluid" data-test="picture"></a>
               <div class="card-body">
                 <h5 class="card-title">{{ tours[id].country }}: {{ tours[id].title }}</h5>
               <p class="card-text">{{ tours[id].description |truncate(100, end='') }}</p>
