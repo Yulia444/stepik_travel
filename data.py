@@ -3,18 +3,19 @@
 title = "Stepik Travel"
 subtitle = "Для тех, кого отвлекают дома"
 description = "Лучшие направления, где никто не будет вам мешать сидеть на берегу и изучать программирование, дизайн, разработку игр и управление продуктами"
-departures = {"msk":"Москвы","spb":"Петербурга","nsk":"Новосибирска","ekb":"Екатеринбурга","kazan":"Казани"}
+departures = {"msk": "Москвы", "spb": "Петербурга", "nsk": "Новосибирска",
+              "ekb": "Екатеринбурга", "kazan": "Казани"}
 
 tours = {
     1: {
         "title": "Marina Lake Hotel & Spa",
-        "description" : "Отель выглядит уютно. Он был построен из красного соснового дерева и украшен синими камнями.  Высокие округлые окна добавляют общий стиль дома и были добавлены в дом в довольно симметричном образце.",
-        "departure":"nsk",
+        "description": "Отель выглядит уютно. Он был построен из красного соснового дерева и украшен синими камнями.  Высокие округлые окна добавляют общий стиль дома и были добавлены в дом в довольно симметричном образце.",
+        "departure": "nsk",
         "picture": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
         "price": 62000,
         "stars": "4",
         "country": "Куба",
-		"nights":6,
+		"nights": 6,
 		"date": "2 марта",
     },
     2: {
@@ -24,8 +25,8 @@ tours = {
         "picture": "https://images.unsplash.com/photo-1445019980597-93fa8acb246c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
         "price": 85000,
         "stars": "5",
-        "country":"Вьетнам",
-		"nights":8,
+        "country": "Вьетнам",
+		"nights": 8,
 		"date": "12 января",
     },
     3: {
@@ -35,7 +36,7 @@ tours = {
         "picture": "https://images.unsplash.com/photo-1569660072562-48a035e65c30?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
         "price": 63000,
         "stars": "3",
-        "country":"Пакистан",
+        "country": "Пакистан",
 		"nights": 11,
 		"date": "7 февраля",
         },
@@ -46,8 +47,8 @@ tours = {
         "picture": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
         "price": 62000,
         "stars": "4",
-        "country":"Индия",
-		"nights":9,
+        "country": "Индия",
+		"nights": 9,
 		"date": "22 января",
     },
     5: {
@@ -57,8 +58,8 @@ tours = {
         "picture": "https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
         "price": 68000,
         "stars": "4",
-        "country":"Доминикана",
-		"nights":8,
+        "country": "Доминикана",
+		"nights": 8,
 		"date": "18 января",
     },
     6: {
@@ -69,7 +70,7 @@ tours = {
         "price": 53000,
         "stars": "3",
         "country": "Пакистан",
-		"nights":13,
+		"nights": 13,
 		"date": "15 февраля",
     },
     7: {
@@ -91,7 +92,7 @@ tours = {
         "price": 44000,
         "stars": "4",
         "country": "Тайланд",
-		"nights":7,
+		"nights": 7,
 		"date": "3 февраля",
     },
     9: {
@@ -102,7 +103,7 @@ tours = {
         "price": 39000,
         "stars": "3",
         "country": "Индия",
-		"nights":10,
+		"nights": 10,
 		"date": "1 февраля",
     },
     10: {
@@ -113,7 +114,7 @@ tours = {
         "price": 52000,
         "stars": "4",
         "country": "Куба",
-		"nights":10,
+		"nights": 10,
 		"date": "30 января",
     },
     11: {
@@ -124,7 +125,7 @@ tours = {
         "price": 68000,
         "stars": "5",
         "country": "Индия",
-		"nights":9,
+		"nights": 9,
 		"date": "1 марта",
     },
     12: {
@@ -135,7 +136,7 @@ tours = {
         "price": 72000,
         "stars": "4",
         "country": "Мексика",
-		"nights":12,
+		"nights": 12,
 		"date": "17 февраля",
     },
     13: {
@@ -146,7 +147,7 @@ tours = {
         "price": 49000,
         "stars": "3",
         "country": "Куба",
-		"nights":8,
+		"nights": 8,
 		"date": "26 января",
     },
     14: {
@@ -157,7 +158,7 @@ tours = {
         "price": 91000,
         "stars": "5",
         "country": "Вьетнам",
-		"nights":9,
+		"nights": 9,
 		"date": "3 февраля",
     },
     15: {
@@ -179,8 +180,7 @@ tours = {
          "price": 74000,
          "stars": "5",
          "country": "Вьетнам",
-		"nights":12,
+		"nights": 12,
 		"date": "24 января",
-     }
-
-}
+        }
+    }
